@@ -1,0 +1,51 @@
+@include mediaDesktop {
+
+  header {
+    margin-bottom: 2rem;
+  }
+  .body {
+    padding:15rem;
+  }
+
+  .lead {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    
+  }
+  main {
+    height: 55rem;
+    display:flex;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+
+    & > * {
+      flex: 0 0 31%;
+      height: 25rem;
+    }
+  }
+
+
+
+  .box {
+   
+   &-1 {
+    transform: translateX(14rem) translateY(15rem);
+   
+   }
+
+   &-2 {
+    transform: translateX(16rem) translateY(1rem);
+   }
+
+   &-3 {
+    transform: translateX(-18.5rem) translateY(29rem);
+   }
+
+   &-4 {
+    transform: translateX(-16rem) translateY(10em);
+   
+   }
+  }
+}
